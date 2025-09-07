@@ -25,6 +25,7 @@ cat ~/notes/work/day1.txt
 
 
 
+
 Output:
 
 Learn Linux basics
