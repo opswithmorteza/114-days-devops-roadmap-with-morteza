@@ -168,4 +168,3 @@ cat ~/notes/work/day1.txt
 
 ---
 
-If you want, I can prepare similar detailed explanations with examples for the other LPIC-1 topics as well!
