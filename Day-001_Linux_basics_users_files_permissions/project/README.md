@@ -24,6 +24,7 @@ echo "Buy groceries" > ~/notes/personal/todo.txt
 cat ~/notes/work/day1.txt
 
 
+
 Output:
 
 Learn Linux basics
