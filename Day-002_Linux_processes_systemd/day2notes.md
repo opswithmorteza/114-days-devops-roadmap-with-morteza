@@ -148,7 +148,7 @@ sudo mount -a
 
 ---
 
-## 5. fstab (Persistent Mounts)
+## 8. fstab (Persistent Mounts)
 
 Edit `/etc/fstab`:
 
@@ -166,7 +166,7 @@ UUID=8765-4321   none     swap   sw             0 0
 
 ---
 
-## 6. 🔍 The `find` Command
+## 9. 🔍 The `find` Command
 
 The **`find`** command searches for files and directories based on name, type, size, permissions, and more.
 
