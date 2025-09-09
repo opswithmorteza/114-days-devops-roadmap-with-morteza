@@ -7,6 +7,27 @@
 - Create a small hands-on project
 
 ---
+🐧 Linux Architecture Overview
+
+Linux is a Unix-like operating system composed of:
+
+Kernel: Core managing hardware, processes, memory, devices
+
+Shell: Command-line interface interpreting user commands (bash, zsh)
+
+User Space: Applications and libraries running above kernel
+
+Filesystem: Hierarchical directory structure managed by kernel
+
+Linux boots through several stages:
+
+BIOS/UEFI initializes hardware
+
+Bootloader (GRUB/LILO) loads kernel
+
+Kernel initializes system, mounts root filesystem
+
+Init/Systemd starts services and user environment
 
 # Exploring the Linux Command Line
 
