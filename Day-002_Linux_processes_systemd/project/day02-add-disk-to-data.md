@@ -120,7 +120,3 @@ Filesystem      Size  Used Avail Use% Mounted on
 * Retrieved UUID using `blkid`.
 * Configured automatic mount using UUID in `/etc/fstab`.
 * Verified mount operation with `mount -a`.
-
----# Project – Day 002
-
-Describe the project, steps to run, and expected outcome.
