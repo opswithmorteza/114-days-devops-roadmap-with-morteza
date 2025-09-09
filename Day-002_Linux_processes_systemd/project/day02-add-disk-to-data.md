@@ -1,6 +1,4 @@
----
-
-# 📘 projects/day02-add-disk-to-data.md
+📘 projects/day02-add-disk-to-data.md
 
 ````markdown
 # 📂 Day 002 Project – Add New Disk and Mount at /data Using UUID
