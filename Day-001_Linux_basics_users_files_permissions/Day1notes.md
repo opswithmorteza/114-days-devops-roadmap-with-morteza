@@ -125,7 +125,19 @@ sudo chgrp admin hello.txt
 ```
 
 ---
+Using the Linux Manual (`man`)
 
+```bash
+man ls
+man chmod
+```
+
+🔑 Tips:
+- Press `SPACE` → scroll  
+- Type `/keyword` → search  
+- Press `q` → quit
+
+- 
 ## 4. Create a Small Hands-on Project: Personal Notes Organizer
 
 ### Goal:
