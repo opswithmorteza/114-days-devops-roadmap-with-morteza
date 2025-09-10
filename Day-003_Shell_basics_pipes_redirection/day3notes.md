@@ -1,4 +1,3 @@
-حتماً! ابتدا مرور کنیم برنامه‌ای که برای **روز سوم** نوشتی چی بود
 
 ### ✅ **Day 3 – File permissions, ownership, SUID/SGID, sticky bit**
 
