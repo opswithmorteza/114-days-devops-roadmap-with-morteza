@@ -99,9 +99,3 @@ cat $REPORT
 * Ensures shared directories use sticky bit for safety
 * Normalizes executable file permissions to 755 unless special bits set
 * Logs all operations for auditing purposes
-
----
-
----
-
-If you want, I can prepare ready-to-upload Markdown files for these projects with step-by-step instructions and explanations too! Just let me know.
