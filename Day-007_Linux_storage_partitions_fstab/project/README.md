@@ -42,8 +42,3 @@ LOGFILE="/var/log/system-updates.log"
 } >> $LOGFILE 2>&1
 ```
 
-\#DevOps #Linux #PackageManagement #APT #YUM #DNF #Pacman #Zypper #SysAdmin #Roadmap #114Days #Day7
-
----
-
-Do you want me to now design the **Day 7 infographic image** (like Day 5 & 6) with the title on top and your GitHub link at the bottom?
