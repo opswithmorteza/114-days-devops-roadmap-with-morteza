@@ -36,16 +36,6 @@ We’ll cover:
 * Maintained by Linux distros or third-party vendors.
 * Configurable through `/etc/apt/sources.list`, `/etc/yum.repos.d/`, etc.
 
-  خیلی عالی 👌
-پس برای **Day 7 – Linux Package Management**، برنامه‌ی کامل آموزش رو به این شکل می‌چینم (انگلیسی – جامع، حرفه‌ای، با مثال و خروجی):
-
----
-
-# 📌 Day 7 – Linux Package Management
-
-Today we’ll dive deep into **package management** in Linux, covering both Debian-based (APT) and RHEL-based (RPM/YUM/DNF) systems. You’ll also learn how to manage repositories, handle advanced scenarios, and even automate package installations with scripts.
-
----
 
 ## 🔹 1. What is Package Management?
 
