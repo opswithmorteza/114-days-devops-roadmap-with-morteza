@@ -60,10 +60,5 @@ fi
 
 👉 Great way to *see the impact of process priority in action*.
 
----
-
-
-
-\#Linux #DevOps #Monitoring #ProcessManagement #Automation
 
 ---
