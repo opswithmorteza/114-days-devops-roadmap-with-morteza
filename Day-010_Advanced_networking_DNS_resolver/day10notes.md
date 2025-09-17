@@ -1,143 +1,200 @@
-# 📘 **Day 10 – Linux Process Management & System Monitoring 
+# 🚀 Day 10 – Web Services (Nginx & Apache)
+
+## 🔹 Overview
+
+Web services are the backbone of modern DevOps infrastructures. At the heart of it are **web servers** like **Nginx** and **Apache**, which serve static content, proxy dynamic requests, and handle encryption via **SSL/TLS**.
+
+Understanding them is essential for **LPIC-2** and for real-world DevOps practices.
 
 ---
 
-## 🔹 **1. Process Basics**
+## 🔹 Core Concepts
 
-* **Process:** A running program → identified by a PID (Process ID).
-
-* **View running processes:**
-
-  ```bash
-  ps aux
-  top
-  htop
-  ```
-
-* **Foreground vs Background:**
-
-  ```bash
-  ping google.com &    # run in background
-  jobs                 # list background jobs
-  fg %1                # bring job to foreground
-  ```
-
-* **Process Tree Visualization:**
-
-  ```bash
-  pstree -p
-  ```
-
-👉 **Pro Tip:** Process trees help identify *orphaned or stuck services* after crashes.
+* **Web Server**: Software that listens on ports (default: `80` for HTTP, `443` for HTTPS) and serves content to clients.
+* **Reverse Proxy**: A server that sits in front of web applications, handling client requests and passing them to backend services.
+* **Virtual Host**: Hosting multiple websites/domains on a single server.
+* **SSL/TLS**: Encryption protocol to secure communication between client and server.
 
 ---
 
-## 🔹 **2. Lifecycle of a Process**
+## 🔹 Installing Nginx & Apache
 
-* **States:** New → Ready → Running → Waiting → Terminated.
-* **Special States:** Zombie (Z), Orphan.
-
-Cleaning zombies:
+### Nginx
 
 ```bash
-ps aux | grep Z
-kill -HUP <parent-PID>
+# Debian/Ubuntu
+sudo apt update && sudo apt install nginx -y
+
+# CentOS/RHEL
+sudo yum install epel-release -y
+sudo yum install nginx -y
+```
+
+### Apache (httpd)
+
+```bash
+# Debian/Ubuntu
+sudo apt update && sudo apt install apache2 -y
+
+# CentOS/RHEL
+sudo yum install httpd -y
 ```
 
 ---
 
-## 🔹 **3. Scheduling & Prioritization**
-
-* **Nice Values:** `-20` (highest priority) → `19` (lowest priority).
-
-* **Change priority:**
-
-  ```bash
-  nice -n 10 sleep 100 &
-  renice -n -5 -p <PID>
-  ```
-
-* **Realtime Scheduling (for production-critical apps):**
-
-  ```bash
-  chrt -r -p 1234   # show scheduling policy
-  chrt -f -p 1234   # set FIFO scheduling
-  ```
-
-👉 **Pro Tip:** Databases often get higher priority; backups should get lower.
-
----
-
-## 🔹 **4. Load Average Deep Dive**
-
-* Represents number of **running + waiting processes**.
-* **Interpretation:**
-
-  * Load = 4 on **1 CPU system** → overloaded.
-  * Load = 4 on **8-core system** → normal.
-* Example:
-
-  ```bash
-  uptime
-  ```
-
-👉 Rule of thumb: **Load > number of CPUs = system under pressure**.
-
----
-
-## 🔹 **5. Monitoring Tools**
-
-* **top / htop:** CPU & RAM usage.
-* **iotop:** disk I/O.
-* **atop:** CPU + Memory + Disk + Network combined.
-* **dstat:** real-time multi-resource monitor.
-* **sar (sysstat):** historical logs.
-* **systemd-cgtop:** resource usage per cgroup (useful in containerized environments).
-
-Examples:
+## 🔹 Managing Services
 
 ```bash
-sar -n DEV 5 10    # network stats
-atop -c -m         # memory stats
+# Start & Enable
+sudo systemctl start nginx
+sudo systemctl enable nginx
+
+sudo systemctl start apache2
+sudo systemctl enable apache2
+
+# Check status
+systemctl status nginx
+systemctl status apache2
 ```
 
 ---
 
-## 🔹 **6. Resource Bottlenecks**
+## 🔹 Configuring Nginx
 
-* **CPU bound?** → High `%sy` (system time).
-* **I/O bound?** → High `%wa` (I/O wait).
-* **Memory Pressure?** → Check OOM killer logs:
+### Default Config File
 
-  ```bash
-  dmesg | grep -i kill
-  ```
+* `/etc/nginx/nginx.conf`
+* `/etc/nginx/sites-available/` (Ubuntu/Debian)
+
+### Example: Virtual Host
+
+```nginx
+server {
+    listen 80;
+    server_name example.com;
+
+    root /var/www/example.com/html;
+    index index.html index.htm;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+```
+
+Enable site:
+
+```bash
+sudo ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled/
+sudo nginx -t
+sudo systemctl reload nginx
+```
+
+---
+
+## 🔹 Configuring Apache
+
+### Virtual Host Example
+
+```apache
+<VirtualHost *:80>
+    ServerName example.com
+    DocumentRoot /var/www/example.com/public_html
+
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+```
+
+Enable site:
+
+```bash
+sudo a2ensite example.com.conf
+sudo systemctl reload apache2
+```
 
 ---
 
-## 🔹 **7. Cgroups for Process Control**
+## 🔹 Reverse Proxy with Nginx
 
-* Limit resources with systemd:
+```nginx
+server {
+    listen 80;
+    server_name app.example.com;
 
-  ```bash
-  systemd-run --scope -p MemoryMax=500M myapp
-  ```
-
-👉 Docker and Kubernetes rely on these mechanisms behind the scenes.
-
----
-
-## 🔹 **8. Containers & Processes**
-
-* Containers use **namespaces + cgroups**.
-* Container processes are still visible in the host kernel (try `htop`).
+    location / {
+        proxy_pass http://127.0.0.1:5000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+}
+```
 
 ---
 
-## 🔹 **Professional Notes & Tricks**
+## 🔹 SSL/TLS with Self-Signed Certificate
 
-* **OOM Killer:** kills memory-hungry processes first.
-* **Zombie vs Orphan:** Zombie = entry in process table, Orphan = adopted by PID 1.
-* **Monitoring Strategy:** Combine `sar` (historical) + `atop` (real-time) + Prometheus exporters.
+```bash
+# Generate private key & cert
+sudo openssl req -x509 -nodes -days 365 \
+  -newkey rsa:2048 -keyout /etc/ssl/private/nginx-selfsigned.key \
+  -out /etc/ssl/certs/nginx-selfsigned.crt
+```
+
+### Configure in Nginx
+
+```nginx
+server {
+    listen 443 ssl;
+    server_name example.com;
+
+    ssl_certificate /etc/ssl/certs/nginx-selfsigned.crt;
+    ssl_certificate_key /etc/ssl/private/nginx-selfsigned.key;
+
+    location / {
+        root /var/www/example.com/html;
+        index index.html;
+    }
+}
+```
+
+Redirect HTTP → HTTPS:
+
+```nginx
+server {
+    listen 80;
+    server_name example.com;
+    return 301 https://$host$request_uri;
+}
+```
 
 ---
+
+## 🔹 Useful Commands
+
+```bash
+# Test configuration
+nginx -t
+apachectl configtest
+
+# Reload services after config change
+systemctl reload nginx
+systemctl reload apache2
+
+# Logs
+tail -f /var/log/nginx/access.log
+tail -f /var/log/apache2/error.log
+```
+
+---
+
+## 🔹 Key Insights
+
+* Nginx is lightweight, faster for static content, and widely used as a reverse proxy/load balancer.
+* Apache is more flexible with modules, widely supported, but heavier than Nginx.
+* SSL/TLS configuration is a must for modern web security.
+* Understanding **Virtual Hosts** and **Reverse Proxy** setups is crucial for DevOps pipelines and microservices.
+
+---
+
+✅ This covers the **core LPIC-2 Web Services topics** + real-world DevOps best practices.
