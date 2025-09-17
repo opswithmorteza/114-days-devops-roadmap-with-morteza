@@ -141,6 +141,3 @@ atop -c -m         # memory stats
 * **Monitoring Strategy:** Combine `sar` (historical) + `atop` (real-time) + Prometheus exporters.
 
 ---
-
-
-Do you also want me to prepare this **as a ready-to-paste `README.md`** file for GitHub so you don’t have to edit anything?
