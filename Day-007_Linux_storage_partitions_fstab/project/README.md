@@ -1,44 +1,10 @@
+# Day 007 Projects — Linux Storage: Partitions and fstab
 
-**Project 1 – Multi-Tool Installer**
-Write a script that installs common tools (`curl`, `git`, `htop`) automatically, detecting the package manager of the system.
+This day has two assessed projects. Full requirements and acceptance criteria are in [the lesson](../notes.md).
 
-```bash
-#!/bin/bash
-if command -v apt >/dev/null; then
-    sudo apt update && sudo apt install -y curl git htop
-elif command -v yum >/dev/null; then
-    sudo yum install -y curl git htop
-elif command -v dnf >/dev/null; then
-    sudo dnf install -y curl git htop
-elif command -v pacman >/dev/null; then
-    sudo pacman -Syu --noconfirm curl git htop
-elif command -v zypper >/dev/null; then
-    sudo zypper install -y curl git htop
-else
-    echo "Unsupported package manager."
-fi
-```
+1. [Project 1 — Guided build: Linux Storage: Partitions and fstab](PROJECT-1.md)
+2. [Project 2 — Production challenge: Linux Storage: Partitions and fstab](PROJECT-2.md)
 
-**Project 2 – Auto Updater with Logging**
-A script that updates and upgrades your system, then logs output to `/var/log/system-updates.log`.
+Use `bash lab.sh check` for prerequisites, `bash lab.sh plan` to review the example, and `bash lab.sh verify` before committing.
 
-```bash
-#!/bin/bash
-LOGFILE="/var/log/system-updates.log"
-{
-    echo "==== Update started at $(date) ===="
-    if command -v apt >/dev/null; then
-        sudo apt update && sudo apt upgrade -y
-    elif command -v yum >/dev/null; then
-        sudo yum update -y
-    elif command -v dnf >/dev/null; then
-        sudo dnf upgrade -y
-    elif command -v pacman >/dev/null; then
-        sudo pacman -Syu --noconfirm
-    elif command -v zypper >/dev/null; then
-        sudo zypper update -y
-    fi
-    echo "==== Update finished at $(date) ===="
-} >> $LOGFILE 2>&1
-```
-
+Keep screenshots and command output in a local `evidence/` directory. Redact secrets and personal data before committing.
