@@ -88,31 +88,31 @@
 | 84 | Journey review | [Day-084_Journey_review](Day-084_Journey_review) |
 | 85 | Personal branding | [Day-085_Personal_branding](Day-085_Personal_branding) |
 | 86 | Final DevOps cheatsheet | [Day-086_Final_DevOps_cheatsheet](Day-086_Final_DevOps_cheatsheet) |
-| 87 | Buffer / Extra Labs | [Day-087_Buffer_Extra_Labs](Day-087_Buffer_Extra_Labs) |
-| 88 | Buffer / Extra Labs | [Day-088_Buffer_Extra_Labs](Day-088_Buffer_Extra_Labs) |
-| 89 | Buffer / Extra Labs | [Day-089_Buffer_Extra_Labs](Day-089_Buffer_Extra_Labs) |
-| 90 | Buffer / Extra Labs | [Day-090_Buffer_Extra_Labs](Day-090_Buffer_Extra_Labs) |
-| 91 | Buffer / Extra Labs | [Day-091_Buffer_Extra_Labs](Day-091_Buffer_Extra_Labs) |
-| 92 | Buffer / Extra Labs | [Day-092_Buffer_Extra_Labs](Day-092_Buffer_Extra_Labs) |
-| 93 | Buffer / Extra Labs | [Day-093_Buffer_Extra_Labs](Day-093_Buffer_Extra_Labs) |
-| 94 | Buffer / Extra Labs | [Day-094_Buffer_Extra_Labs](Day-094_Buffer_Extra_Labs) |
-| 95 | Buffer / Extra Labs | [Day-095_Buffer_Extra_Labs](Day-095_Buffer_Extra_Labs) |
-| 96 | Buffer / Extra Labs | [Day-096_Buffer_Extra_Labs](Day-096_Buffer_Extra_Labs) |
-| 97 | Buffer / Extra Labs | [Day-097_Buffer_Extra_Labs](Day-097_Buffer_Extra_Labs) |
-| 98 | Buffer / Extra Labs | [Day-098_Buffer_Extra_Labs](Day-098_Buffer_Extra_Labs) |
-| 99 | Buffer / Extra Labs | [Day-099_Buffer_Extra_Labs](Day-099_Buffer_Extra_Labs) |
-| 100 | Buffer / Extra Labs | [Day-100_Buffer_Extra_Labs](Day-100_Buffer_Extra_Labs) |
-| 101 | Buffer / Extra Labs | [Day-101_Buffer_Extra_Labs](Day-101_Buffer_Extra_Labs) |
-| 102 | Buffer / Extra Labs | [Day-102_Buffer_Extra_Labs](Day-102_Buffer_Extra_Labs) |
-| 103 | Buffer / Extra Labs | [Day-103_Buffer_Extra_Labs](Day-103_Buffer_Extra_Labs) |
-| 104 | Buffer / Extra Labs | [Day-104_Buffer_Extra_Labs](Day-104_Buffer_Extra_Labs) |
-| 105 | Buffer / Extra Labs | [Day-105_Buffer_Extra_Labs](Day-105_Buffer_Extra_Labs) |
-| 106 | Buffer / Extra Labs | [Day-106_Buffer_Extra_Labs](Day-106_Buffer_Extra_Labs) |
-| 107 | Buffer / Extra Labs | [Day-107_Buffer_Extra_Labs](Day-107_Buffer_Extra_Labs) |
-| 108 | Buffer / Extra Labs | [Day-108_Buffer_Extra_Labs](Day-108_Buffer_Extra_Labs) |
-| 109 | Buffer / Extra Labs | [Day-109_Buffer_Extra_Labs](Day-109_Buffer_Extra_Labs) |
-| 110 | Buffer / Extra Labs | [Day-110_Buffer_Extra_Labs](Day-110_Buffer_Extra_Labs) |
-| 111 | Buffer / Extra Labs | [Day-111_Buffer_Extra_Labs](Day-111_Buffer_Extra_Labs) |
-| 112 | Buffer / Extra Labs | [Day-112_Buffer_Extra_Labs](Day-112_Buffer_Extra_Labs) |
-| 113 | Buffer / Extra Labs | [Day-113_Buffer_Extra_Labs](Day-113_Buffer_Extra_Labs) |
-| 114 | Buffer / Extra Labs | [Day-114_Buffer_Extra_Labs](Day-114_Buffer_Extra_Labs) |
+| 87 | GitOps with Argo CD | [Day-087_Buffer_Extra_Labs](Day-087_Buffer_Extra_Labs) |
+| 88 | GitOps with Flux CD | [Day-088_Buffer_Extra_Labs](Day-088_Buffer_Extra_Labs) |
+| 89 | Container security hardening | [Day-089_Buffer_Extra_Labs](Day-089_Buffer_Extra_Labs) |
+| 90 | Kubernetes RBAC and NetworkPolicy | [Day-090_Buffer_Extra_Labs](Day-090_Buffer_Extra_Labs) |
+| 91 | Kubernetes autoscaling | [Day-091_Buffer_Extra_Labs](Day-091_Buffer_Extra_Labs) |
+| 92 | Stateful workloads in Kubernetes | [Day-092_Buffer_Extra_Labs](Day-092_Buffer_Extra_Labs) |
+| 93 | Service mesh fundamentals | [Day-093_Buffer_Extra_Labs](Day-093_Buffer_Extra_Labs) |
+| 94 | OpenTelemetry observability | [Day-094_Buffer_Extra_Labs](Day-094_Buffer_Extra_Labs) |
+| 95 | SLOs, SLIs and error budgets | [Day-095_Buffer_Extra_Labs](Day-095_Buffer_Extra_Labs) |
+| 96 | Alertmanager and on-call | [Day-096_Buffer_Extra_Labs](Day-096_Buffer_Extra_Labs) |
+| 97 | Incident response and postmortems | [Day-097_Buffer_Extra_Labs](Day-097_Buffer_Extra_Labs) |
+| 98 | Backup and disaster recovery | [Day-098_Buffer_Extra_Labs](Day-098_Buffer_Extra_Labs) |
+| 99 | PostgreSQL operations | [Day-099_Buffer_Extra_Labs](Day-099_Buffer_Extra_Labs) |
+| 100 | Redis and caching operations | [Day-100_Buffer_Extra_Labs](Day-100_Buffer_Extra_Labs) |
+| 101 | Messaging with RabbitMQ and Kafka | [Day-101_Buffer_Extra_Labs](Day-101_Buffer_Extra_Labs) |
+| 102 | API gateway and rate limiting | [Day-102_Buffer_Extra_Labs](Day-102_Buffer_Extra_Labs) |
+| 103 | TLS, PKI and cert-manager | [Day-103_Buffer_Extra_Labs](Day-103_Buffer_Extra_Labs) |
+| 104 | Software supply-chain security | [Day-104_Buffer_Extra_Labs](Day-104_Buffer_Extra_Labs) |
+| 105 | Policy as code with OPA | [Day-105_Buffer_Extra_Labs](Day-105_Buffer_Extra_Labs) |
+| 106 | FinOps and cloud cost optimisation | [Day-106_Buffer_Extra_Labs](Day-106_Buffer_Extra_Labs) |
+| 107 | Multi-environment GitOps | [Day-107_Buffer_Extra_Labs](Day-107_Buffer_Extra_Labs) |
+| 108 | Chaos engineering | [Day-108_Buffer_Extra_Labs](Day-108_Buffer_Extra_Labs) |
+| 109 | Platform engineering fundamentals | [Day-109_Buffer_Extra_Labs](Day-109_Buffer_Extra_Labs) |
+| 110 | Backstage developer portal | [Day-110_Buffer_Extra_Labs](Day-110_Buffer_Extra_Labs) |
+| 111 | Advanced Terraform testing and policy | [Day-111_Buffer_Extra_Labs](Day-111_Buffer_Extra_Labs) |
+| 112 | Progressive delivery | [Day-112_Buffer_Extra_Labs](Day-112_Buffer_Extra_Labs) |
+| 113 | DevOps portfolio and interview lab | [Day-113_Buffer_Extra_Labs](Day-113_Buffer_Extra_Labs) |
+| 114 | Production readiness review and graduation | [Day-114_Buffer_Extra_Labs](Day-114_Buffer_Extra_Labs) |

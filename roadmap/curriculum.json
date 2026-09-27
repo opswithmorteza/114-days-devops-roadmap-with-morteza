@@ -1,0 +1,576 @@
+{
+  "generatedAt": "2026-09-27T08:55:39.460Z",
+  "days": 114,
+  "lessons": [
+    {
+      "day": 1,
+      "title": "Linux Basics: Users, Files and Permissions",
+      "projects": 2
+    },
+    {
+      "day": 2,
+      "title": "Linux Processes and systemd",
+      "projects": 2
+    },
+    {
+      "day": 3,
+      "title": "Shell Basics: Pipes and Redirection",
+      "projects": 2
+    },
+    {
+      "day": 4,
+      "title": "Bash Scripting I: Loops and Functions",
+      "projects": 2
+    },
+    {
+      "day": 5,
+      "title": "Bash Scripting II: Regex and Error Handling",
+      "projects": 2
+    },
+    {
+      "day": 6,
+      "title": "Linux Networking Basics",
+      "projects": 2
+    },
+    {
+      "day": 7,
+      "title": "Linux Storage: Partitions and fstab",
+      "projects": 2
+    },
+    {
+      "day": 8,
+      "title": "Web Server Setup: Nginx and Apache",
+      "projects": 2
+    },
+    {
+      "day": 9,
+      "title": "Linux Security: sudo and Firewall",
+      "projects": 2
+    },
+    {
+      "day": 10,
+      "title": "Advanced Networking: DNS Resolver",
+      "projects": 2
+    },
+    {
+      "day": 11,
+      "title": "Mail Services Basics",
+      "projects": 2
+    },
+    {
+      "day": 12,
+      "title": "Advanced Storage: LVM and RAID",
+      "projects": 2
+    },
+    {
+      "day": 13,
+      "title": "Linux Troubleshooting",
+      "projects": 2
+    },
+    {
+      "day": 14,
+      "title": "LPIC-1 and LPIC-2 Review",
+      "projects": 2
+    },
+    {
+      "day": 15,
+      "title": "High Availability and Load Balancing",
+      "projects": 2
+    },
+    {
+      "day": 16,
+      "title": "Virtualization with KVM and libvirt",
+      "projects": 2
+    },
+    {
+      "day": 17,
+      "title": "SELinux and AppArmor",
+      "projects": 2
+    },
+    {
+      "day": 18,
+      "title": "LDAP Basics",
+      "projects": 2
+    },
+    {
+      "day": 19,
+      "title": "LDAP Client Integration",
+      "projects": 2
+    },
+    {
+      "day": 20,
+      "title": "Advanced DNS with BIND",
+      "projects": 2
+    },
+    {
+      "day": 21,
+      "title": "DHCP and PXE",
+      "projects": 2
+    },
+    {
+      "day": 22,
+      "title": "File Sharing with NFS and SMB",
+      "projects": 2
+    },
+    {
+      "day": 23,
+      "title": "SAN Concepts and iSCSI",
+      "projects": 2
+    },
+    {
+      "day": 24,
+      "title": "Performance Tuning I",
+      "projects": 2
+    },
+    {
+      "day": 25,
+      "title": "Performance Tuning II",
+      "projects": 2
+    },
+    {
+      "day": 26,
+      "title": "Auditing and Central Logging",
+      "projects": 2
+    },
+    {
+      "day": 27,
+      "title": "Enterprise Troubleshooting",
+      "projects": 2
+    },
+    {
+      "day": 28,
+      "title": "LPIC-3 Review and Integration",
+      "projects": 2
+    },
+    {
+      "day": 29,
+      "title": "Git and GitHub Basics",
+      "projects": 2
+    },
+    {
+      "day": 30,
+      "title": "Advanced Git: Hooks and Tags",
+      "projects": 2
+    },
+    {
+      "day": 31,
+      "title": "Bash Scripting Refresher",
+      "projects": 2
+    },
+    {
+      "day": 32,
+      "title": "Python Automation: os and subprocess",
+      "projects": 2
+    },
+    {
+      "day": 33,
+      "title": "Python HTTP Automation",
+      "projects": 2
+    },
+    {
+      "day": 34,
+      "title": "systemd Deep Dive",
+      "projects": 2
+    },
+    {
+      "day": 35,
+      "title": "Docker Basics",
+      "projects": 2
+    },
+    {
+      "day": 36,
+      "title": "Docker Volumes and Networks",
+      "projects": 2
+    },
+    {
+      "day": 37,
+      "title": "Docker Compose Basics",
+      "projects": 2
+    },
+    {
+      "day": 38,
+      "title": "Nginx Reverse Proxy with Compose",
+      "projects": 2
+    },
+    {
+      "day": 39,
+      "title": "Jenkins Basics",
+      "projects": 2
+    },
+    {
+      "day": 40,
+      "title": "Jenkins Advanced: Agents and Stages",
+      "projects": 2
+    },
+    {
+      "day": 41,
+      "title": "GitHub Actions Basics",
+      "projects": 2
+    },
+    {
+      "day": 42,
+      "title": "GitHub Actions Deployment",
+      "projects": 2
+    },
+    {
+      "day": 43,
+      "title": "Ansible Basics",
+      "projects": 2
+    },
+    {
+      "day": 44,
+      "title": "Ansible Roles and Handlers",
+      "projects": 2
+    },
+    {
+      "day": 45,
+      "title": "Ansible Vault and Secrets",
+      "projects": 2
+    },
+    {
+      "day": 46,
+      "title": "Terraform Basics",
+      "projects": 2
+    },
+    {
+      "day": 47,
+      "title": "Terraform Modules",
+      "projects": 2
+    },
+    {
+      "day": 48,
+      "title": "Terraform and Ansible Integration",
+      "projects": 2
+    },
+    {
+      "day": 49,
+      "title": "Kubernetes Basics",
+      "projects": 2
+    },
+    {
+      "day": 50,
+      "title": "Kubernetes Deployments and Services",
+      "projects": 2
+    },
+    {
+      "day": 51,
+      "title": "Kubernetes ConfigMaps and Secrets",
+      "projects": 2
+    },
+    {
+      "day": 52,
+      "title": "Kubernetes Ingress Controller",
+      "projects": 2
+    },
+    {
+      "day": 53,
+      "title": "Helm Basics",
+      "projects": 2
+    },
+    {
+      "day": 54,
+      "title": "Helm Advanced",
+      "projects": 2
+    },
+    {
+      "day": 55,
+      "title": "AWS Basics",
+      "projects": 2
+    },
+    {
+      "day": 56,
+      "title": "AWS IAM",
+      "projects": 2
+    },
+    {
+      "day": 57,
+      "title": "Amazon EKS",
+      "projects": 2
+    },
+    {
+      "day": 58,
+      "title": "GCP and GKE Basics",
+      "projects": 2
+    },
+    {
+      "day": 59,
+      "title": "Azure and AKS Basics",
+      "projects": 2
+    },
+    {
+      "day": 60,
+      "title": "Multi-Cloud Review",
+      "projects": 2
+    },
+    {
+      "day": 61,
+      "title": "Elastic Stack Basics",
+      "projects": 2
+    },
+    {
+      "day": 62,
+      "title": "Fluentd and Logstash Pipelines",
+      "projects": 2
+    },
+    {
+      "day": 63,
+      "title": "Prometheus Basics",
+      "projects": 2
+    },
+    {
+      "day": 64,
+      "title": "Grafana Dashboards",
+      "projects": 2
+    },
+    {
+      "day": 65,
+      "title": "DevSecOps Basics",
+      "projects": 2
+    },
+    {
+      "day": 66,
+      "title": "HashiCorp Vault Basics",
+      "projects": 2
+    },
+    {
+      "day": 67,
+      "title": "Vault with Kubernetes",
+      "projects": 2
+    },
+    {
+      "day": 68,
+      "title": "Security in CI/CD",
+      "projects": 2
+    },
+    {
+      "day": 69,
+      "title": "Capstone Architecture Design",
+      "projects": 2
+    },
+    {
+      "day": 70,
+      "title": "Capstone Repository Setup",
+      "projects": 2
+    },
+    {
+      "day": 71,
+      "title": "Capstone CI/CD Pipeline",
+      "projects": 2
+    },
+    {
+      "day": 72,
+      "title": "Capstone Infrastructure Deployment",
+      "projects": 2
+    },
+    {
+      "day": 73,
+      "title": "Capstone Application Deployment",
+      "projects": 2
+    },
+    {
+      "day": 74,
+      "title": "Capstone Monitoring",
+      "projects": 2
+    },
+    {
+      "day": 75,
+      "title": "Capstone Logging",
+      "projects": 2
+    },
+    {
+      "day": 76,
+      "title": "Capstone Secrets Management",
+      "projects": 2
+    },
+    {
+      "day": 77,
+      "title": "Capstone Testing I",
+      "projects": 2
+    },
+    {
+      "day": 78,
+      "title": "Capstone Testing II",
+      "projects": 2
+    },
+    {
+      "day": 79,
+      "title": "Capstone Troubleshooting",
+      "projects": 2
+    },
+    {
+      "day": 80,
+      "title": "Capstone Documentation",
+      "projects": 2
+    },
+    {
+      "day": 81,
+      "title": "Capstone Polish",
+      "projects": 2
+    },
+    {
+      "day": 82,
+      "title": "Capstone Presentation",
+      "projects": 2
+    },
+    {
+      "day": 83,
+      "title": "Capstone Publishing",
+      "projects": 2
+    },
+    {
+      "day": 84,
+      "title": "Journey Review",
+      "projects": 2
+    },
+    {
+      "day": 85,
+      "title": "Personal Branding for DevOps",
+      "projects": 2
+    },
+    {
+      "day": 86,
+      "title": "Final DevOps Cheatsheet",
+      "projects": 2
+    },
+    {
+      "day": 87,
+      "title": "GitOps with Argo CD",
+      "projects": 2
+    },
+    {
+      "day": 88,
+      "title": "GitOps with Flux CD",
+      "projects": 2
+    },
+    {
+      "day": 89,
+      "title": "Container Security Hardening",
+      "projects": 2
+    },
+    {
+      "day": 90,
+      "title": "Kubernetes Security: RBAC and NetworkPolicy",
+      "projects": 2
+    },
+    {
+      "day": 91,
+      "title": "Kubernetes Autoscaling",
+      "projects": 2
+    },
+    {
+      "day": 92,
+      "title": "Stateful Workloads in Kubernetes",
+      "projects": 2
+    },
+    {
+      "day": 93,
+      "title": "Service Mesh Fundamentals",
+      "projects": 2
+    },
+    {
+      "day": 94,
+      "title": "OpenTelemetry Observability",
+      "projects": 2
+    },
+    {
+      "day": 95,
+      "title": "SLOs, SLIs and Error Budgets",
+      "projects": 2
+    },
+    {
+      "day": 96,
+      "title": "Alertmanager and On-Call",
+      "projects": 2
+    },
+    {
+      "day": 97,
+      "title": "Incident Response and Postmortems",
+      "projects": 2
+    },
+    {
+      "day": 98,
+      "title": "Backup and Disaster Recovery",
+      "projects": 2
+    },
+    {
+      "day": 99,
+      "title": "PostgreSQL Operations",
+      "projects": 2
+    },
+    {
+      "day": 100,
+      "title": "Redis and Caching Operations",
+      "projects": 2
+    },
+    {
+      "day": 101,
+      "title": "Messaging with RabbitMQ and Kafka",
+      "projects": 2
+    },
+    {
+      "day": 102,
+      "title": "API Gateway and Rate Limiting",
+      "projects": 2
+    },
+    {
+      "day": 103,
+      "title": "TLS, PKI and cert-manager",
+      "projects": 2
+    },
+    {
+      "day": 104,
+      "title": "Software Supply Chain Security",
+      "projects": 2
+    },
+    {
+      "day": 105,
+      "title": "Policy as Code with OPA",
+      "projects": 2
+    },
+    {
+      "day": 106,
+      "title": "FinOps and Cloud Cost Optimisation",
+      "projects": 2
+    },
+    {
+      "day": 107,
+      "title": "Multi-Environment GitOps",
+      "projects": 2
+    },
+    {
+      "day": 108,
+      "title": "Chaos Engineering",
+      "projects": 2
+    },
+    {
+      "day": 109,
+      "title": "Platform Engineering Fundamentals",
+      "projects": 2
+    },
+    {
+      "day": 110,
+      "title": "Backstage Developer Portal",
+      "projects": 2
+    },
+    {
+      "day": 111,
+      "title": "Advanced Terraform Testing and Policy",
+      "projects": 2
+    },
+    {
+      "day": 112,
+      "title": "Progressive Delivery",
+      "projects": 2
+    },
+    {
+      "day": 113,
+      "title": "DevOps Portfolio and Interview Lab",
+      "projects": 2
+    },
+    {
+      "day": 114,
+      "title": "Production Readiness Review and Graduation",
+      "projects": 2
+    }
+  ]
+}
